@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Online Course Registration</h1>
+
+    <form id="courseForm">
+
+        <label>Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter your name">
+
+        <label>Register Number</label>
+        <input type="text" id="regNo" placeholder="Enter register number">
+
+        <label>Email</label>
+        <input type="text" id="email" placeholder="Enter email">
+
+        <label>Course Name</label>
+        <select id="course">
+            <option value="">-- Select Course --</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Artificial Intelligence">
+                Artificial Intelligence
+            </option>
+            <option value="Cloud Computing">Cloud Computing</option>
+        </select>
+
+        <label>Learning Mode</label>
+
+        <div class="radio">
+            <input type="radio" name="mode" value="Online"> Online
+            <input type="radio" name="mode" value="Offline"> Offline
+        </div>
+
+        <label>Semester</label>
+
+        <select id="semester">
+            <option value="">-- Select Semester --</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+        </div>
+
+    </form>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
